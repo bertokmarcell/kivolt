@@ -1,20 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package kivolt;
 
-/**
- *
- * @author BertókMarcell(SZF_N_
- */
-public class Program {
+import controller.Controller;
+import modell.Emberek;
+import view.VIew;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Program {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Emberek emberek = new Emberek();
+        view.VIew view = new VIew();
+        Controller controll = new Controller(emberek,view);
+        controll.indit();
     }
     
 }
